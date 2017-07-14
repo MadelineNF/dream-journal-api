@@ -5,3 +5,13 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Entry.create(author: 'admin',content: 'Why is my site broken?',date: '07132017',time: '1821',category: 'nightmare')
+Entry.create(author: 'admin',content: 'Why is my site broken?',date: '07132017',time: '1821',category: 'nightmare')
+Entry.create(author: 'admin',content: 'Why is my site broken?',date: '07132017',time: '1821',category: 'nightmare')
+Entry.create(author: 'admin',content: 'Why is my site broken?',date: '07132017',time: '1821',category: 'nightmare')
+Entry.create(author: 'admin',content: 'Why is my site broken?',date: '07132017',time: '1821',category: 'nightmare')
+Entry.create(author: 'admin',content: 'Why is my site broken?',date: '07132017',time: '1821',category: 'nightmare')
+Entry.create(author: 'admin',content: 'Why is my site broken?',date: '07132017',time: '1821',category: 'nightmare')
+Entry.create(author: 'admin',content: 'Why is my site broken?',date: '07132017',time: '1821',category: 'nightmare')
+Entry.create(author: 'admin',content: 'Why is my site broken?',date: '07132017',time: '1821',category: 'nightmare')
+Entry.create(author: 'admin',content: 'Why is my site broken?',date: '07132017',time: '1821',category: 'nightmare')
