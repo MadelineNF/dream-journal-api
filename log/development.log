@@ -66,3 +66,23 @@ Processing by EntriesController#show as HTML
 Completed 200 OK in 27ms (Views: 1.2ms | ActiveRecord: 5.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-07-14 14:47:17 -0400
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/student/.rvm/gems/ruby-2.4.0/gems/railties-5.1.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/student/.rvm/gems/ruby-2.4.0/gems/railties-5.1.2/lib/rails/templates/rails/welcome/index.html.erb (6.9ms)
+Completed 200 OK in 21ms (Views: 15.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/entries" for 127.0.0.1 at 2017-07-14 14:47:25 -0400
+Processing by EntriesController#index as HTML
+  [1m[36mEntry Load (25.1ms)[0m  [1m[34mSELECT "entries".* FROM "entries" ORDER BY "entries"."id" ASC[0m
+Completed 200 OK in 71ms (Views: 23.8ms | ActiveRecord: 43.3ms)
+
+
+Started GET "/entries" for 127.0.0.1 at 2017-07-14 14:56:23 -0400
+Processing by EntriesController#index as HTML
+  [1m[36mEntry Load (1.5ms)[0m  [1m[34mSELECT "entries".* FROM "entries" ORDER BY "entries"."id" ASC[0m
+Completed 200 OK in 28ms (Views: 19.5ms | ActiveRecord: 1.5ms)
+
+
