@@ -36,3 +36,4 @@ class EntriesController < ApplicationController
       render json: { message: "there was an error" }
     end
   end
+end
