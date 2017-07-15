@@ -21,9 +21,9 @@ class EntriesController < ApplicationController
       @entry.save 
       @all_entries = Entry.order(:id)
       render json: { message: "entry added successfully", entries_data: @all_entries }
-    rescue Exception
-      render json: { message: "there was an error" }, status: 500
-    end
+      rescue Exception => e
+        logger.info "Caught exception: #{e.inspect}"
+      end
   end
 
   def update
