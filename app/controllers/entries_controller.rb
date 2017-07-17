@@ -36,4 +36,16 @@ class EntriesController < ApplicationController
       render json: { message: "there was an error" }
     end
   end
+  def destroy
+    begin
+      @entry = Entry.find(params[:id])
+      @entry.destroy
+      @all_entries = Entry.order(:id)
+      render json: { message: "ok", entries_data: @all_entries }
+    rescue ActiveRecord::RecordNotFound
+      render json: { message: "no quote matches that ID" }
+    rescue Exception
+      render json: { message: "there was some other error" }
+    end
+  end
 end
